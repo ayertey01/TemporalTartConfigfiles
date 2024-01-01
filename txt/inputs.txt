@@ -1,0 +1,17 @@
+
+SELECT *
+FROM [DataLake_Logs_Parameters].[dbo].[ExecutionLogs]
+WHERE RecordsCount = 200
+    AND ApplicableDate BETWEEN 20231112 AND 20231209;
+
+--Update records based on RecordsCount before the date 20231112
+
+UPDATE E
+SET E.RecordsCount = (SELECT TOP 1 RecordsCount
+                      FROM [DataLake_Logs_Parameters].[dbo].[ExecutionLogs] 
+                      WHERE FileName = E.FileName
+                        AND ApplicableDate < 20231112
+                      ORDER BY ApplicableDate DESC)
+FROM [DataLake_Logs_Parameters].[dbo].[ExecutionLogs] E
+WHERE E.RecordsCount = 200
+    AND E.ApplicableDate BETWEEN 20231112 AND 20231209;

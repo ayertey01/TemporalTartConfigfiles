@@ -1,4 +1,12 @@
 const fs = require("fs");
-const TextIn = fs.readFileSync("./txt/inputs.txt", "utf8");
+const textIn = fs.readFileSync("./txt/inputs.txt", "utf-8");
+console.log(textIn);
+const textOut =
+  "this is a script on modifying my mistake\n" +
+  textIn +
+  "Created on " +
+  Date.now();
 
-console.log(TextIn);
+fs.writeFileSync("./txt/output.txt", textOut);
+const peter = "ayertey01 ";
+console.log(`This wascompleted by ${peter}`);

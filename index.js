@@ -18,6 +18,9 @@ const fs = require("fs");
 fs.readFile("./txt/textfiles.txt", "utf-8", (err,data1)=>
   {fs.readFile(`./txt/${data1}.txt`, "utf-8", (err,data2)=>{
     console.log(data2);
+     fs.writeFile("./txt/finalrecords", `we combined ${data1}.\n and ${data2}`, (err)=>{
+      console.log('compiled successfully'); 
+     })
   })
 })
 console.log("reading file...")

@@ -12,5 +12,6 @@ const peter = "ayertey01 ";
 console.log(`This wascompleted by ${peter}`);
 
 
-fs.readFileSync("./package.json","utf-8");
+/*fs.readFileSync("./package.json","utf-8");
 console.log(fs)
+*/

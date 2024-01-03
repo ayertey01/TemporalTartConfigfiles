@@ -1,4 +1,5 @@
 const fs = require("fs");
+// synchronous method 
 const textIn = fs.readFileSync("./txt/inputs.txt", "utf-8");
 console.log(textIn);
 const textOut =
@@ -9,9 +10,12 @@ const textOut =
 
 fs.writeFileSync("./txt/output.txt", textOut);
 const peter = "ayertey01 ";
-console.log(`This wascompleted by ${peter}`);
+console.log(`This was completed by ${peter}\n`);
 
 
-/*fs.readFileSync("./package.json","utf-8");
-console.log(fs)
-*/
+//asynchronous method  
+fs.readFile("./txt/textfile.txt", "utf-8", (err,data)=>{
+  console.log(data);
+})
+
+

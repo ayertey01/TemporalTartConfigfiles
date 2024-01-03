@@ -16,4 +16,4 @@ SET E.RecordsCount = (SELECT TOP 1 RecordsCount
 FROM [DataLake_Logs_Parameters].[dbo].[ExecutionLogs] E
 WHERE E.RecordsCount = 200
     AND E.ApplicableDate BETWEEN 20231112 AND 20231209;
-Created on 1704288703152
+Created on 1704289916714

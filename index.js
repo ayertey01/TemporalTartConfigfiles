@@ -14,14 +14,14 @@
 
  
 //asynchronous method  
-const fs = require("fs");
+const rd = require("fs");
 
-fs.readFile("./txt/textjfiles.txt", "utf-8", (err,data1)=>
+rd.readFile("./txt/textfiles.txt", "utf-8", (err,data1)=>
   {
     if (err) return console.log(err);
-    fs.readFile(`./txt/${data1}.txt`, "utf-8", (err,data2)=>{
+    rd.readFile(`./txt/${data1}.txt`, "utf-8", (err,data2)=>{
     console.log(data2);
-     fs.writeFile("./txt/finalrecords", `we combined ${data1}.\n and ${data2}`, (err)=>{
+     rd.writeFile("./txt/finalrecords", `we combined ${data1}.\n and ${data2}`, (err)=>{
       console.log('compiled successfully'); 
      })
   })

@@ -6,8 +6,13 @@ const url = require("url");
 const server = http.createServer((req,res)=>{
   //console.log(req.url);
   //console.log(req);
-  const pathName = url.parse(req.url);
-  
+  const pathName = req.url;
+  if(pathName === "/" || "/Overview"){
+    console.log("This is the overview page");
+  }
+  else if(pathName === "/About"){
+    console.log("This is the about page ")
+  }
   res.end("Hello server");
 })
 

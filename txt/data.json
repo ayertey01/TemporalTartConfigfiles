@@ -1,0 +1,85 @@
+{
+  "result": [
+    {
+      "status": "disabled",
+      "name": {
+        "first": "Ulices",
+        "middle": "Micah",
+        "last": "Runolfsdottir-Lockman"
+      },
+      "username": "Ulices-Runolfsdottir-Lockman",
+      "password": "LDYhsdlWKJ1uVha",
+      "emails": ["Teagan_Reinger77@gmail.com", "Annamarie76@gmail.com"],
+      "phoneNumber": "1-835-672-1478 x0120",
+      "location": {
+        "street": "32870 Toy Park",
+        "city": "New Daltonmouth",
+        "state": "Wyoming",
+        "country": "Mauritius",
+        "zip": "58479-2019",
+        "coordinates": {
+          "latitude": -66.6901,
+          "longitude": -49.3467
+        }
+      },
+      "website": "https://heartfelt-terminology.biz",
+      "domain": "enraged-chainstay.biz",
+      "job": {
+        "title": "International Brand Supervisor",
+        "descriptor": "International",
+        "area": "Applications",
+        "type": "Officer",
+        "company": "Senger, West and Williamson"
+      },
+      "creditCard": {
+        "number": "3752-057634-25404",
+        "cvv": "033",
+        "issuer": "diners_club"
+      },
+      "uuid": "498306c9-2b03-45b5-9353-a9a4c0770de7",
+      "objectId": "65a815362b4072e4996dbc3a"
+    },
+    {
+      "status": "disabled",
+      "name": {
+        "first": "Arvid",
+        "middle": "Kennedy",
+        "last": "Reinger"
+      },
+      "username": "Arvid-Reinger",
+      "password": "pAgXa5zPoj7_jbS",
+      "emails": [
+        "Agustin_Balistreri@example.com",
+        "Bernhard.Reichel@example.com"
+      ],
+      "phoneNumber": "536.396.1860 x38974",
+      "location": {
+        "street": "95735 Jacobi Place",
+        "city": "New Billville",
+        "state": "Colorado",
+        "country": "Moldova",
+        "zip": "61116",
+        "coordinates": {
+          "latitude": -21.1821,
+          "longitude": -57.7075
+        }
+      },
+      "website": "https://any-inglenook.org",
+      "domain": "amusing-weeder.com",
+      "job": {
+        "title": "Future Solutions Developer",
+        "descriptor": "Customer",
+        "area": "Creative",
+        "type": "Assistant",
+        "company": "Reynolds, King and Hessel"
+      },
+      "creditCard": {
+        "number": "4189-7963-8973-4144",
+        "cvv": "275",
+        "issuer": "american_express"
+      },
+      "uuid": "88a8679f-8bef-4517-ba06-a287132dd4c9",
+      "objectId": "65a815362b4072e4996dbc3b"
+    }
+  ]
+}

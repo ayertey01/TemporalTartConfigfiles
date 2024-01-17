@@ -9,11 +9,15 @@ const server = http.createServer((req,res)=>{
   // res.end("Hello server");
   const pathName = req.url;
   if(pathName === "/" || "/home"){
-   console.log(`this is the home page`); 
+   res.end(`this is the home page`); 
   }
   else{
-    console.log(`page not found`);
+    res.writeHead(404,
+                  {
+                    "Content-Type":"text/html"
+                  });
   }
+  res.end(`<h1>Oops! page not found</h1>`);
 })
 
 server.listen(8000,'0.0.0.0',()=>{

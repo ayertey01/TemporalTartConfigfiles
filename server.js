@@ -11,6 +11,9 @@ const server = http.createServer((req,res)=>{
   if(pathName === "/" || "/home"){
    res.end(`this is the home page`); 
   }
+  else if(pathName === "/API"){
+    res.end(`this is the API page `);
+  }  
   else{
     res.writeHead(404,
                   {

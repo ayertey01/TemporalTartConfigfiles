@@ -1,5 +1,6 @@
 const http = require("http");
 const url = require("url");
+const fs = require("fs");
 // files
 
 //server goes here 
@@ -12,6 +13,9 @@ const server = http.createServer((req,res)=>{
    res.end(`this is the home page`); 
   }
   else if(pathName === "/API"){
+    fs.readFile(`./txt/data.json`,(err,data)=>
+      
+      )
     res.end(`this is the API page `);
   }  
   else{

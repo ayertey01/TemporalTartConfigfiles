@@ -1,5 +1,6 @@
 const http = require("http");
 const url = require("url");
+const fs = require("fs");
 // files
 
 //server goes here 
@@ -8,12 +9,24 @@ const server = http.createServer((req,res)=>{
   //console.log(req);
   const pathName = req.url;
   if(pathName === "/" || "/Overview"){
-    console.log("This is the overview page");
+    res.end("This is the overview page");
   }
   else if(pathName === "/About"){
-    console.log("This is the about page ")
+    res.end("This is the about page ");
   }
-  res.end("Hello server");
+
+  else if(pathName ==="/API"){
+    res.end(`this is the api resquest`);
+    fs.readfile(`./txt/data.json`,"utf-8",
+               (err,data))
+  }
+  else{
+    res.writeHead(404,{
+      "Content-Type":"text/html"
+      
+    })
+    res.end(`<h1>Oops! page not found</h1>`);
+  }
 })
 
 server.listen(8000  ,'127.0.0.1',()=>{

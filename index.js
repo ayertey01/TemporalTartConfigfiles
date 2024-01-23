@@ -4,6 +4,9 @@ const fs = require("fs");
 // files
 
 //server goes here 
+const data = fs.readfileSync(`./txt/data.json`,"utf-8");
+const dataObj = JSON.parse(data);
+
 const server = http.createServer((req,res)=>{
   //console.log(req.url);
   //console.log(req);
@@ -16,9 +19,7 @@ const server = http.createServer((req,res)=>{
   }
 
   else if(pathName ==="/API"){
-    res.end(`this is the api resquest`);
-    fs.readfile(`./txt/data.json`,"utf-8",
-               (err,data))
+   res.end(data);
   }
   else{
     res.writeHead(404,{

@@ -17,7 +17,6 @@ const server = http.createServer((req,res)=>{
   else if(pathName === "/About"){
     res.end("This is the about page ");
   }
-
   else if(pathName ==="/API"){
    res.end(data);
   }
